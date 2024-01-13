@@ -242,7 +242,20 @@ header {
 
   .hero .row .content .carousel {
     display: flex;
+    margin: 0;
     padding: 0;
+  }
+
+  .hero .row .content .carousel {
+    max-height: 200px;
+  }
+
+  .hero .row .content .carousel .carousel-item img {
+    max-width: 235px;
+    border-radius: 10px;
+    transform: translateX(8px) translateY(60px);
+    object-fit: cover;
+    object-position: center;
   }
 
   .hero .content h4 {
