@@ -235,6 +235,11 @@ header {
     position: fixed;
   }
 
+  body {
+    background: url('../img/1.png') no-repeat;
+    background-size: cover;
+  }
+
   .hero .row {
     flex-wrap: wrap-reverse;
   }
