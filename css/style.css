@@ -122,6 +122,7 @@ header {
   line-height: 1.5em;
   color: #fff;
   margin: 10px 0 20px;
+  padding-right: 3rem;
   /* justify-content: ; */
   text-align: justify;
   font-size: 1.2rem;
@@ -223,19 +224,8 @@ header {
     position: fixed;
   }
 
-  body {
-    background: url('../img/1.png');
-    background-size: cover;
-    width: 100%;
-  }
-
-  /* .hero {
-    background: url('../img/1.png');
-    z-index: -100;
-  } */
-
   .hero::before {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4));
   }
 
   .hero .row {
@@ -254,6 +244,10 @@ header {
 
   .hero .row .content .carousel {
     max-height: 200px;
+  }
+
+  .hero .row .content p {
+    padding-right: 0;
   }
 
   .hero .row .content .button a .watch {
