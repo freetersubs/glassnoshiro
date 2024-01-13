@@ -225,9 +225,12 @@ header {
   }
 
   .banner {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
+  body,
   .hero {
     position: fixed;
   }
