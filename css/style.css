@@ -229,7 +229,7 @@ header {
   }
 
   .hero {
-    position: absolute;
+    position: fixed;
   }
 
   .hero .row {
