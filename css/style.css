@@ -19,19 +19,10 @@
 }
 
 body {
-  background: #000;
-  font-family: 'Poppins', 'sans-serif';
-}
-
-.banner {
-  position: relative;
-  width: 100%;
-  background: url('../img/1.png') no-repeat;
+  background: url('../img/1.png');
   background-size: cover;
   background-position: bottom;
-  overflow: hidden;
-  transition: 0.5s;
-  min-height: 100vh;
+  font-family: 'Poppins', 'sans-serif';
 }
 
 header {
@@ -56,15 +47,17 @@ header {
 }
 
 .hero {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   min-height: 100vh;
   padding: 8rem 7% 1.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 10;
+  /* background: url('../img/1.png') no-repeat; */
+  background-size: cover;
+  background-position: bottom;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
 .hero::before {
@@ -135,6 +128,7 @@ header {
 }
 
 .hero .row .content .button {
+  display: flex;
   position: relative;
 }
 
@@ -224,12 +218,6 @@ header {
     visibility: hidden;
   }
 
-  .banner {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
   body,
   .hero {
     position: fixed;
@@ -238,7 +226,7 @@ header {
   body {
     background: url('../img/1.png');
     background-size: cover;
-    z-index: 100;
+    width: 100%;
   }
 
   /* .hero {
@@ -266,6 +254,14 @@ header {
 
   .hero .row .content .carousel {
     max-height: 200px;
+  }
+
+  .hero .row .content .button a .watch {
+    padding: 1rem;
+  }
+
+  .hero .row .content .button a .tra {
+    padding: 1rem;
   }
 
   .hero .row .content .carousel .carousel-item img {
