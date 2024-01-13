@@ -236,8 +236,18 @@ header {
   }
 
   body {
-    background: url('../img/1.png') no-repeat;
+    background: url('../img/1.png');
     background-size: cover;
+    z-index: 100;
+  }
+
+  /* .hero {
+    background: url('../img/1.png');
+    z-index: -100;
+  } */
+
+  .hero::before {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4));
   }
 
   .hero .row {
