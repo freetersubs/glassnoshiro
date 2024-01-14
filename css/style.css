@@ -19,7 +19,7 @@
 }
 
 body {
-  background: url('../img/bg.png');
+  background: url('../img/bg.png') no-repeat;
   background-size: cover;
   background-position: bottom;
   font-family: 'Poppins', 'sans-serif';
@@ -223,17 +223,30 @@ header {
     position: fixed;
   }
 
-  body {
+  /* body {
     position: relative;
-    background-image: url('../img/bg.png'), url('../img/bg.png');
+    background-image: url('../img/bg.png'), url('../img/bg2.jpg');
     background-position: top, bottom;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 0, -100%;
+    background-size: cover, 100%;
+    background-position-y: 0, 10%;
+  } */
+
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    padding: 8rem 7% 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('../img/bg.png') no-repeat, url('../img/bg2.jpg');
+    background-size: 100%, 100%;
+    background-position: top, top;
+    background-position-y: top, 25%;
   }
 
   .hero::before {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3));
   }
 
   .hero .row {
