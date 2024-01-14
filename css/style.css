@@ -242,7 +242,7 @@ header {
     background: url('../img/bg.png') no-repeat, url('../img/bg2.jpg');
     background-size: 100%, 100%;
     background-position: top, top;
-    background-position-y: top, 25%;
+    background-position-y: top, 50%;
   }
 
   .hero::before {
