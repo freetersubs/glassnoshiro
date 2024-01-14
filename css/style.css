@@ -71,6 +71,10 @@ header {
   background: rgba(0, 0, 0, 0.4);
 }
 
+.banner {
+  display: none;
+}
+
 .hero .row {
   display: flex;
 }
@@ -231,6 +235,9 @@ header {
     background-size: 170%;
   }
 
+  .hero {
+    position: relative;
+  }
   .hero::before {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
   }
@@ -241,6 +248,14 @@ header {
 
   .hero .row .content {
     align-self: flex-end;
+  }
+
+  .banner {
+    display: block;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
   }
 
   .hero .row .content .carousel {
